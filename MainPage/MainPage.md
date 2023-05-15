@@ -3,12 +3,11 @@
 ## Elements
 * Header with search bar
 * Logo?/Navigation to main page
-* Nav bar with several sections
+* Nav bar with several sections *more in-depth in nav-bar folder*
     * About
-        * About Us
-        * Contact Us
-        * Work for Venture Out
-        * MU Student Organization Funding
-        * Testimonials
-        * Frequently Asked Questions
-        * Location
+    * Courses
+    * Request a Course
+    * Pricing
+    * Wilderness Medicine
+    * FAQs
+    * Location
