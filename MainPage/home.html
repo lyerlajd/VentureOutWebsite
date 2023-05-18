@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venture Out</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- header -->
+    <section class="header">
+        <div class="header-top">
+            <div class="search">
+                <input type="text" placeholder="Search this site...">
+                <button> search </button> <!-- search icon instead -->
+            </div>
+        </div>
+         <!-- nav-bar -->
+        <section class="nav-bar">
+            <div class="button">About</div>
+            <div class="button">Courses</div>
+            <div class="button">Request a Course</div>
+            <div class="button">Pricing</div>
+            <div class="button">Wilderness Medicine</div>
+            <div class="button">FAQs</div>
+            <div class="button">Location</div>
+        </section>
+    </section>
+    
+    <div class="scroll">
+        <!-- main -->
+        <section class="main">
+            <section class="hero">
+                <!-- Big Image of Venture Out -->
+                <div id="main-hero-image"></div>
+                <!-- mission -->
+                <section class="mission">
+                    <h2>We Help Make Groups Effective Teams</h2>
+                    <p>Venture Out specializes in group teambuilding utilizing high ropes and on-the-ground challenge courses. 
+                        From birthday parties to corporate professional development events, Venture Out courses are fun and effective 
+                        tools your group can use to build trust, learn conflict resolution skills, practice successful communication strategies, and more.</p>
+                    <br>
+                    <p>We host groups of 8-100+ participants for teambuilding courses all year long. We can host your group at our complex, 
+                        or at the indoor or outdoor location of your choice. Our on-the-ground challenge courses are accessible for everyone. 
+                        Each course is customized to meet your group’s needs and accomplish your group’s goals.</p>
+                    <br>
+                    <div class="button dark">Request a Course</div>
+                </section>
+            </section>
+        </section>
+
+        <!-- footer -->
+        <section class="footer"></section>
+    </div>
+    
+    <script>
+        const header = document.querySelector('.header');
+        const scroll = document.querySelector('.scroll');
+
+        var timer = null;
+        scroll.addEventListener('scroll', function() {
+            header.style.boxShadow = "0px 10px rgba(0, 0, 0, 0.25)";
+            if(timer !== null) {
+                clearTimeout(timer);        
+            }
+            timer = setTimeout(function() {
+                header.style.boxShadow = "0px 0px";
+            }, 150);
+        }, false);
+
+    </script>
+</body>
+</html>

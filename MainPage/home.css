@@ -1,0 +1,103 @@
+:root
+{
+    --black: #111111;
+    --white: #EEEEEE;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    overflow-y: hidden;
+    background-color: var(--white);
+}
+.scroll
+{
+    overflow-y: auto;
+    height: 1000px;
+}
+.scroll::-webkit-scrollbar {display: none;}
+
+.header
+{
+    background-color: var(--black);
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    margin: 0px;
+}
+    .header-top
+    {
+        display: flex;
+        flex: 1;
+        position: relative;
+    }
+        .search
+        {
+            position: absolute;
+            right: 0;
+        }
+            input, button {padding: 0.5em}
+    .nav-bar
+    {
+        flex: 1;
+        position: relative;
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .button
+    {
+        display: block;
+        padding: 0.5em;
+        color: var(--white);
+        height: auto;
+        width: fit-content;
+        border: 2px solid var(--white);
+        border-radius: 0.5em;
+    }
+    .dark
+    {
+        color: var(--black);
+        border: 2px solid var(--black);
+    }
+    .button:hover
+    {
+        background-color: gold;
+        transition: 500ms;
+    }
+
+.main
+{
+    height: fit-content; 
+    position: relative;
+}
+.hero
+{
+    height: 40%;
+    position: relative;
+}
+#main-hero-image
+{
+    height: 650px;
+    background-image: url("../Images/20210921-OSE-Venture-Out-SEO-0109.jpg");
+    background-size: cover;
+    background-position-y: 775px;
+}
+.mission
+{
+    padding: 1em;
+}
+.footer
+{
+    background-color: var(--black);
+    height: 40em;
+    width: 100%;
+}
