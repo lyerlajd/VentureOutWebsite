@@ -2,6 +2,8 @@
 {
     --black: #111111;
     --white: #EEEEEE;
+    --gold: #F1B82D;
+    --forest-green: rgb(20, 120, 50);
 }
 *
 {
@@ -28,6 +30,7 @@ body
     width: 100%;
     position: fixed;
     z-index: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 1em 2em;
@@ -43,8 +46,9 @@ body
         {
             position: absolute;
             right: 0;
+            display: flex;
         }
-            input, button {padding: 0.5em}
+            input {padding: 0.5em}
     .nav-bar
     {
         flex: 1;
@@ -58,10 +62,16 @@ body
         display: block;
         padding: 0.5em;
         color: var(--white);
-        height: auto;
+        height: fit-content;
         width: fit-content;
         border: 2px solid var(--white);
         border-radius: 0.5em;
+        transition: 500ms;
+    }
+    .small
+    {
+        padding: 0.25em;
+        border-radius: 0.25em;
     }
     .dark
     {
@@ -70,7 +80,7 @@ body
     }
     .button:hover
     {
-        background-color: gold;
+        background-color: var(--gold);
         transition: 500ms;
     }
 
@@ -78,6 +88,7 @@ body
 {
     height: fit-content; 
     position: relative;
+    margin-top: 0em;
 }
 .hero
 {
@@ -86,14 +97,145 @@ body
 }
 #main-hero-image
 {
-    height: 650px;
-    background-image: url("../Images/20210921-OSE-Venture-Out-SEO-0109.jpg");
+    height: 750px;
+    background-image: url("../Images/odyssey.jpg");
     background-size: cover;
-    background-position-y: 775px;
+    background-position-y: 875px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1
+{
+    font-size: 1000%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h2
+{
+    font-size: 500%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3
+{
+    font-size: 250%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p
+{
+    font-size: x-large;
+}
+.white-text
+{
+    color: var(--white);
 }
 .mission
 {
-    padding: 1em;
+    margin: 2em;
+}
+#mission-header
+{
+    background-color: var(--gold);
+    padding: 2em;
+    border-radius: 2em;
+}
+#mission-hero-1
+{
+    margin: 2em 2em 2em 0em;
+    display: flex;
+    gap: 2em;
+}
+.courses
+{
+    position: relative;
+    padding: 2em;
+    background-color: var(--black);
+}
+.card-container
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2em;
+    column-gap: 4em;
+    align-items: center;
+    justify-content: center;
+
+}
+.card
+{
+    height: 35em;
+    width: 40em;
+    background-color: var(--gold);
+    border-radius: 5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card.wide
+{
+    width: 90em;
+    padding: 5em;
+    border-radius: 10em;
+}
+.card div
+{
+    width: 100%;
+    flex: 7
+}
+.card h3
+{
+    padding: 0.5em;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tcc
+{
+    background-image: url("../Images/tcc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5em 5em 0em 0em;
+}
+.image-wrapper
+{
+    height: 30em;
+    width: 160em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+}
+.tcc2
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5em;
+    width: 60em;
+    clip-path: rect(0px,50px,100px,0px);
+}
+.odyssey
+{
+    background-image: url("../Images/odyssey2.jpg"); /* replace with different image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5em 5em 0em 0em;
+}
+.alpine
+{
+    background-image: url("../Images/alpine-tower.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5em 5em 0em 0em;
+}
+.climb
+{
+    background-image: url("../Images/climbing-wall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5em 5em 0em 0em;
 }
 .footer
 {
